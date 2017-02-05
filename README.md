@@ -6,8 +6,8 @@ It is a docker file used to create a version of the ev3dev with the Jade ros dis
 To build the image goes to the directory where Dockerfile is located and execute:
    "$ docker build --force-rm -t ev3-ros-jade -f ev3_ros_jade.dockerfile ."
 
-NOTE 1: build process takes a long time (about 1 hour in my case)
-NOTE 2: build process generates lot of warnings in some python code.  TODO: investigate this warnings.
+	NOTE 1: build process takes a long time (about 1 hour in my case)
+	NOTE 2: build process generates lot of warnings in some python code.  TODO: investigate this warnings.
 
 Beside the dockerfile include a little modification of launch.py (/opt/ros/jade/lib/python2.7/dist-packages/roslaunch/launch.py) code in order to allow ros_core be executed into EV3.
 
